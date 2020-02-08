@@ -31,7 +31,7 @@ $\alpha=\frac{1}{A}=\frac{2}{\left[\operatorname{erf}\left(c_{2} / \sqrt{2}\righ
 
 Consequently, the truncated PDF equation is then given by,
 
-$PDF(x)=\frac{1}{A\sqrt{2 \pi}}\int_{c_{1}}^{c_{2}} \exp \left(-x^{2} / 2\right) \mathrm{d}x.$
+$PDF(x)=\frac{\alpha}{\sqrt{2 \pi}}\int_{c_{1}}^{c_{2}} \exp \left(-x^{2} / 2\right) \mathrm{d}x.$
 
 After obtaininig the new (truncated) PDF equation, the expected value of the new PDF is computed as in,
 
