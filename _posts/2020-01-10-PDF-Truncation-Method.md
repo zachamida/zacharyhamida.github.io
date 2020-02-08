@@ -9,7 +9,7 @@ toc: false
 ## Introduction
 State-space models is well suited for time-series analyses. One of the popular state-space models algorithms is Kalman filter (KF). In some applications, the estimates of a Kalman filter are required to be restricted between a range of values. For example, evaluating structural elements with a score from [0-100] over a period of time T.
 
-![Example Data](https://zachamida.github.io/assets/img/posts/post1/ExampleData.png)
+![Example Data](https://zachamida.github.io/images/posts/post1/ExampleData.png)
 
 Utlizing KF for analyzing a domain restricted time-series data may carry some limitations. This is because the KF  estimates have a Normal distribution. Having a Normal distribution implies that part of the probablity distribution can be outside the feasible domain (i.e. [0 100]) or in some cases, when the variablity is high, the KF estimate itself can be outside the feasible range. This can cause problems in interpreting the outcome of the filter.
 
@@ -18,7 +18,7 @@ One way to solve for this problem to apply the PDF truncation method which was i
 ## PDF Truncation
 In order to demonstrate how the PDF truncation method works, it is easier to start with the simpliest case, which is a constrained standard Normal PDF $X\sim\mathcal{N}(0,1)$ with constraints $c_1=-1$ and $c_2=0.5$. Figure (1) show the Normal PDF with the constraints.
 
-![Constrained Standard Normal PDF](https://zachamida.github.io/assets/img/posts/post1/ConstNorm.png)
+![Constrained Standard Normal PDF](https://zachamida.github.io/images/posts/post1/ConstNorm.png)
 
 In the PDF Truncation, the area between the bounds $c_1$
 and $c_2$ is approximated into a normal PDF. For that end, the area between $c_1$ and $c_2$ is calculated as in,
@@ -43,7 +43,7 @@ $\sigma^{2}= \frac{\alpha}{\sqrt{2 \pi}} \int_{c_{1}}^{c_{2}}\left(x-\mu\right)^
 
 Accordingly, the truncated PDF will look as in the figure below,
 
-![Constrained Standard Normal PDF](https://zachamida.github.io/assets/img/posts/post1/TruncNorm.png)
+![Constrained Standard Normal PDF](https://zachamida.github.io/images/posts/post1/TruncNorm.png)
 
 ## Generalizing The PDF Truncation Method:
 Applying the PDF truncation for higher dimentions (i.e. multivariate Normal distribution) requires additional mathematical operations. The PDF truncation is applied to one of the multivariate distribution dimentions at a time. The method is tractable in a sense that the multivariate distribution is transformed into a one dimentional standard Normal case, similar to what was presented earlier. An example application is by considering a mutivariate Normal distribution with two components ($x:X\sim([\mu_1\; \mu_2]^\intercal,\Sigma)$. The constraints can be expressed as in,
