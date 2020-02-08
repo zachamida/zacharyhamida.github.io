@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Zachary Hamida"
-  avatar           : "images/avatar.jpg"
+  avatar           : "https://zachamida.github.io/images/avatar.jpg"
   bio              : "Machine learning / Civil Engineering"
   location         : "Montreal, Canada"
   employer         :
