@@ -1,10 +1,10 @@
 ---
 permalink: /
-title: "Under construction"
+title: "Zachary Hamida"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
-This website is undergoing updates.
+This website is under construction.
